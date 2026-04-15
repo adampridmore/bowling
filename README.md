@@ -2,22 +2,22 @@
 
 ## Background
 
-Sure Strike bowling Alley has asked you to implement a new scoring system for their ten pin bowling lanes.
+Sure Strike Bowling Alley has asked you to implement a new scoring system for their ten pin bowling lanes.
 
-The rules for tenpin bowling scoring are as follows
+The rules for tenpin bowling scoring are as follows:
 
-A game of bowling consists of 10 frames (aka rounds) each player bowls twice in a frame attempting to knock down all 10 pins.
+A game of bowling consists of 10 frames (aka rounds). Each player bowls twice in a frame attempting to knock down all 10 pins.
 
 The player is then scored based on the number of pins they knocked down for that frame.
 
-Example
+Example:
 
 **3 pins knocked down following by 4 pins = 7 score**
 
-A players final score is the tally of their score accross all 10 frames.
+A player's final score is the tally of their score across all 10 frames.
 
 
-More information can be found here
+More information can be found here:
 [Bowling Scoring](https://www.topendsports.com/sport/tenpin/scoring.htm)
 
 
@@ -38,7 +38,7 @@ For example
 
 The score for a gutter game (all zeros) should be **0**
 
-Verify that a game where every owl knocks down 1 pin (20 Bowls of 1) returns a score of **20**.
+Verify that a game where every bowl knocks down 1 pin (20 Bowls of 1) returns a score of **20**.
 
 ## Task 2
 

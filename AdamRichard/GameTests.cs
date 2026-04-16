@@ -1,6 +1,5 @@
 ﻿namespace bowling;
 
-using System.Security.Cryptography;
 using FluentAssertions;
 
 public class UnitTest1
@@ -23,7 +22,6 @@ public class UnitTest1
     [InlineData(new int[]{5,5,3}, 16)] // Spare
     [InlineData(new int[]{5, 5, 5, 1}, 21)] // Spare
     [InlineData(new int[]{10,3,4}, 24)] // Strike
-    
     public void Two_throws_score_is_summed(int[] throws, int expected)
     {
         var game = new Game();

@@ -1,5 +1,6 @@
 ﻿namespace bowling;
 
+using System.Security.Cryptography;
 using FluentAssertions;
 
 public class UnitTest1
@@ -69,5 +70,38 @@ public class UnitTest1
         theThrows.ForEach(game.Bowl);
 
         game.Score().Should().Be(14);
+    }
+
+    [Fact]
+    public void PrintScores()
+    {
+        var game = new Game();
+
+        var theThrows = Enumerable.Repeat<int>(1, 20).ToList();
+        
+        theThrows.ForEach(game.Bowl);
+
+//         var actualText = game.GetScoreCardText();
+//         var expectedText = """
+// | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10   |
+// |     |     |     |     |     |     |     |     |     |       |
+// |     |     |     |     |     |     |     |     |     |       |
+//     """;
+
+        // Console.WriteLine(game.GetScoreCardText());
+
+        // actualText.Should().Be(expectedText);
+    }
+
+    [Fact]
+    public void InterestingGameScoreCard()
+    {
+        var theThrows = new List<int>{1, 4, 4, 5, 6, 4, 5, 5, 10, 0, 1, 7, 3, 6, 4, 10, 2, 8, 6};
+        var game = new Game();
+        theThrows.ForEach(game.Bowl);
+
+        Console.WriteLine("");
+        Console.WriteLine(game.GetScoreCardText());
+        Console.WriteLine("");
     }
 }
